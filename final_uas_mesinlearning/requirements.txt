@@ -1,4 +1,0 @@
-streamlit
-sastrawi
-scikit-learn
-pandas
