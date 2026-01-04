@@ -62,4 +62,11 @@ if prompt := st.chat_input("Ketik pesan Anda di sini..."):
     # Tampilkan respon bot
     with st.chat_message("assistant"):
         st.markdown(response)
+
     st.session_state.messages.append({"role": "assistant", "content": response})
+
+# Gunakan path relatif agar terbaca di server
+with open('chatbot_model.pkl', 'rb') as f:
+    model = pickle.load(f)
+
+
